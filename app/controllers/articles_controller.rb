@@ -2,7 +2,7 @@ class ArticlesController < ApplicationController
   before_action :move_to_index, except: [:index, :show]
 
   def index
-    @articles = Article.all
+    @articles = Article.includes(:user).order("created_at DESC")
   end
   def new
     @article = Article.new
@@ -32,7 +32,7 @@ class ArticlesController < ApplicationController
 
   private
   def article_params
-    params.require(:article).permit(:name, :image, :text).merge(user_id: current_user.id)
+    params.require(:article).permit(:title, :image, :text).merge(user_id: current_user.id)
   end
 
   def move_to_index
