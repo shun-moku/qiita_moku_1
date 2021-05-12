@@ -10,6 +10,7 @@ class ArticlesController < ApplicationController
 
   def create
     Article.create(article_params)
+    redirect_to "/articles"
   end
 
   def destroy
