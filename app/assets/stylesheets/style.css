@@ -5,38 +5,8 @@ audio:not([controls]) {
   height: 0;
 }
 
- * Remove default margin. */
 body {
   margin: 0;
-}
-
-/*
- * Address `outline` inconsistency between Chrome and other browsers. */
-a:focus {
-  outline: thin dotted;
-}
-
-/*
- * Improve readability when focused and also mouse hovered in all browsers. */
-a:active,
-a:hover {
-  outline: 0;
-}
-
-/*
- * Correct font family set oddly in Safari 5 and Chrome. */
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, serif;
-  font-size: 1em;
-}
-
-/*
- * Improve readability of pre-formatted text in all browsers. */
-pre {
-  white-space: pre-wrap;
 }
 
 /*
@@ -60,15 +30,6 @@ sup {
   position: relative;
   vertical-align: baseline;
 }
-
-/* sup {
-  top: -0.5em;
-}
-
-sub {
-  bottom: -0.25em;
-} */
-
 /* ==========================================================================
  * Forms
  * ========================================================================== */
@@ -104,16 +65,6 @@ html input[disabled] {
   cursor: default;
 }
 
-
-/* ==========================================================================
- * Tables
- * ========================================================================== */
-/*
- * Remove most spacing between table cells. */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
 
 /* ==========================================================================
  * CSS SETTING
