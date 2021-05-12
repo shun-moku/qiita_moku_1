@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  before_action :move_to_index, except: [:index, :show]
+  before_action :move_to_index, except: [:index, :show, :search]
 
   def index
     @articles = Article.includes(:user).order("created_at DESC")
@@ -30,6 +30,10 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
     @comment = Comment.new
     @comments = @article.comments.includes(:user)
+  end
+
+  def search
+    @articles = Article.search(params[:keyword])
   end
 
   private
