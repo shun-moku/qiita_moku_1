@@ -23,17 +23,6 @@ a:hover {
   outline: 0;
 }
 
-/* ==========================================================================
- * Typography
- * ========================================================================== */
-/*
- * Address variable `h1` font-size and margin within `section` and `article`
- * contexts in Firefox 4+, Safari 5, and Chrome. */
-h1 {
-  font-size: 10em;
-  margin: 0.67em 0;
-}
-
 /*
  * Correct font family set oddly in Safari 5 and Chrome. */
 code,
@@ -72,13 +61,13 @@ sup {
   vertical-align: baseline;
 }
 
-sup {
+/* sup {
   top: -0.5em;
 }
 
 sub {
   bottom: -0.25em;
-}
+} */
 
 /* ==========================================================================
  * Forms
@@ -107,23 +96,6 @@ textarea {
   /* 3 */
 }
 
-/*
- * Address Firefox 4+ setting `line-height` on `input` using `!important` in
- * the UA stylesheet. */
-button,
-input {
-  line-height: normal;
-}
-
-/*
- * Address inconsistent `text-transform` inheritance for `button` and `select`.
- * All other form control elements do not inherit `text-transform` values.
- * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
- * Correct `select` style inheritance in Firefox 4+ and Opera. */
-button,
-select {
-  text-transform: none;
-}
 
 /*
  * Re-set default cursor for disabled elements. */
@@ -227,11 +199,9 @@ select {
   width: 100%;
 }
 
-i {
-  font-style: normal;
-}
 
-.animate {
+
+/* .animate {
   -moz-transition-property: all;
   -o-transition-property: all;
   -webkit-transition-property: all;
@@ -244,13 +214,13 @@ i {
   -o-transition-timing-function: ease-in;
   -webkit-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
-}
+} */
 
-.button {
+/* .button {
   background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.05) 1%, rgba(0, 0, 0, 0.2) 100%);
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.05) 1%, rgba(0, 0, 0, 0.2) 100%);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1%, rgba(0, 0, 0, 0.2) 100%);
-}
+} */
 
 ul {
   margin: 0;
@@ -269,7 +239,7 @@ ul li {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 660px;
+  max-width: 800px;
   *zoom: 1;
 }
 
@@ -553,7 +523,7 @@ header.header div.header__bar.row div.grid-6 {
 }
 
 header.header div.header__bar.row div.grid-6 a.post {
-  width: 120px;
+  width: 110px;
   display: inline-left;
   margin-left: 10px;
 }
@@ -565,13 +535,13 @@ header.header .user_nav {
 }
 
 header.header .user_nav span {
-  top: 5px;
+  top: 1px;
   display: block;
   float: left;
   margin-left: 30px;
   width: 150px;
   height: 50px;
-  font-size: 1em;
+  font-size: 14px;
   cursor: pointer;
   position: relative;
 }
@@ -779,7 +749,7 @@ form textarea {
   border-radius: 5px;
   font-family: "游ゴシック", "YuGothic";
 }
-
+/* 検索ボタンの色とか */
 form input[type="submit"] {
   background-color: #57C3E9;
   border-radius: 20px;
