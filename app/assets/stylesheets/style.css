@@ -601,7 +601,7 @@ header.header .user_nav span:after {
   font-size: .7em;
   margin-left: -4px;
 }
-
+/* ユーザー名の上にマウスを重ねると「マイページ」と「ログアウト」が表示される*/
 header.header .user_nav span:hover ul {
   color: #57C3E9;
   display: block;
