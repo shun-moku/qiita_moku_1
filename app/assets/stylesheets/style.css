@@ -5,23 +5,6 @@ audio:not([controls]) {
   height: 0;
 }
 
-/* ==========================================================================
- * Base
- * ========================================================================== */
-/*
- * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom. */
-html {
-  font-family: sans-serif;
-  /* 1 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-}
-
-/*
  * Remove default margin. */
 body {
   margin: 0;
@@ -524,22 +507,6 @@ div.contents.row div.content_post p {
   background: #D8D8D8;
 }
 
-.transition,
-a,
-form input[type="submit"] {
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -moz-transition-timing-function: linear;
-  -o-transition-timing-function: linear;
-  -webkit-transition-timing-function: linear;
-  transition-timing-function: linear;
-}
 
 .btn,
 header.header div.header__bar.row div.grid-6 a.post {
