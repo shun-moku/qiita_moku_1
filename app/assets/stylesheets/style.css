@@ -675,6 +675,7 @@ div.contents.row div.content_post:after {
   border-radius: 3px;
 }
 
+/* 下矢印のメニュー（詳細、編集、削除） */
 div.contents.row div.content_post .more {
   position: absolute;
   cursor: pointer;
