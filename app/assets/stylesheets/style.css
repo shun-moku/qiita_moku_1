@@ -199,29 +199,6 @@ select {
   width: 100%;
 }
 
-
-
-/* .animate {
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -moz-transition-timing-function: ease-in;
-  -o-transition-timing-function: ease-in;
-  -webkit-transition-timing-function: ease-in;
-  transition-timing-function: ease-in;
-} */
-
-/* .button {
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.05) 1%, rgba(0, 0, 0, 0.2) 100%);
-  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.05) 1%, rgba(0, 0, 0, 0.2) 100%);
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1%, rgba(0, 0, 0, 0.2) 100%);
-} */
-
 ul {
   margin: 0;
   padding: 0;
@@ -753,9 +730,9 @@ form input[type="submit"] {
   border-radius: 3px;
   font-size: 14px;
 }
-
+/* 検索ボタンに重なった時の色 */
 form input[type="submit"]:hover {
-  background-color: #84d3ef;
+  background-color: #021218;
 }
 
 .container {
