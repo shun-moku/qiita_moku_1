@@ -16,11 +16,10 @@
           <% end %>
         </ul>
       </div>
+      <span class="name">
+        <%= link_to article.user.nickname, user_path(article.user.id), method: :get %>
+      </span>
+      <%= "さんが#{article.created_at}に投稿" %>
       <p class = title_1><%= link_to article.title, article_path(article.id), method: :get %></p>
       <p><%= article.text %></p>
-      <span class="name">
-        <a href="/users/<%= article.user.id %>">
-          <span>投稿者</span><%= article.user.nickname %>
-        </a>
-      </span>
     </div>

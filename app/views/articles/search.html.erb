@@ -5,7 +5,6 @@
 <%= "検索結果" %>
 <div class="contents row">
   <% @articles.each do |article| %>
-    <%= "#{article.user.nickname}さんが#{article.created_at}に投稿" %>
     <%= render partial: "article", locals: { article: article } %>
   <% end %>
 </div>
