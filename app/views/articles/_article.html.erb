@@ -17,9 +17,10 @@
         </ul>
       </div>
       <span class="name">
-        <%= link_to article.user.nickname, user_path(article.user.id), method: :get %>
+        <%= link_to article.user.nickname , user_path(article.user.id), method: :get %>
         <%= "さんが#{article.created_at}に投稿" %>
       </span>
       <p class = title_1><%= link_to article.title, article_path(article.id), method: :get %></p>
-      <p><%= article.text %></p>
+      <%# <p><%= article.text %>
+      <p><%= markdown(article.text) %></p>
     </div>
