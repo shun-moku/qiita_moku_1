@@ -1,11 +1,11 @@
-<div class="contents row">
-  <div class="container">
+<div class="contents_row_new">
+  <div class="container_new">
     <h3>投稿する</h3>
     <%= form_with(model: @article, local: true) do |form| %>
       <%= form.text_field :title, placeholder: "タイトル" %>
 
       <%= form.text_area :text, placeholder: "text", rows: "10" %>
-      <%= form.submit "SEND" %>
+      <%= form.submit "Qiitaに投稿" %>
     <% end %>
   </div>
 </div>

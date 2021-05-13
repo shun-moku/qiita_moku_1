@@ -11,12 +11,12 @@
 
   <body>
     <header class="header">
-      <div class="header__bar row">
+      <div class="header__bar_row_1">
         <h1 class="grid-6"><a href="/"> Qiita</a></h1>
         <% if user_signed_in? %>
-          <div class="user_nav grid-6">
+          <div class="user_nav_grid-6">
             <span><%= current_user.nickname %>
-              <ul class="user__info">
+              <ul class="user__info_1">
                 <li>
                   <%= link_to "マイページ", "/users/#{current_user.id}" %>
                   <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
@@ -36,7 +36,7 @@
     <%= yield %>
     <footer>
       <p>
-        Copyright qiitamoku 2019.
+        Copyright qiitamoku 2021.
       </p>
     </footer>
   </body>
