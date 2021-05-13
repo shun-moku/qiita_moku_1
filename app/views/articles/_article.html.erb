@@ -16,7 +16,7 @@
           <% end %>
         </ul>
       </div>
-      <p class = title_1><%= article.title %></p>
+      <p class = title_1><%= link_to article.title, article_path(article.id), method: :get %></p>
       <p><%= article.text %></p>
       <span class="name">
         <a href="/users/<%= article.user.id %>">
