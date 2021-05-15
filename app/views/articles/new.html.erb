@@ -4,7 +4,7 @@
     <%= form_with(model: @article, local: true) do |form| %>
       <%= form.text_field :title, placeholder: "タイトル" %>
 
-      <%= form.text_area :text, placeholder: "text", rows: "10" %>
+      <%= form.text_area :text, placeholder: "エンジニアに関わる知識をMarkdown記法で書いて共有しよう", rows: "20" %>
       <%= form.submit "Qiitaに投稿" %>
     <% end %>
   </div>
