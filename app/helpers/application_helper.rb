@@ -8,6 +8,8 @@ module ApplicationHelper
       filter_html:     true,     
       hard_wrap:       true,     
       space_after_headers: true, 
+      space_after_headers: true,
+      with_toc_data: true
     }
 
     extensions = {

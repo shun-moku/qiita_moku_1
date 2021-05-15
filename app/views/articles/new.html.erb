@@ -2,10 +2,28 @@
   <div class="container_new">
     <h3>投稿する</h3>
     <%= form_with(model: @article, local: true) do |form| %>
-      <%= form.text_field :title, placeholder: "タイトル" %>
-
-      <%= form.text_area :text, placeholder: "エンジニアに関わる知識をMarkdown記法で書いて共有しよう", rows: "20" %>
+      <div id = 'editor'>
+        <%= form.text_field :title, placeholder: "タイトル" %>
+        <%= form.text_area :text, placeholder: "エンジニアに関わる知識をMarkdown記法で書いて共有しよう", rows: "20", class: 'form-control', id: 'article_text', "v-model" => "input", name: "article[text]" %>
+        <div v-html='input | marked'></div>
+      </div>
       <%= form.submit "Qiitaに投稿" %>
     <% end %>
+<!-- リアルタイムプレビュー -->
+    <script>
+      window.onload = function() {
+        new Vue({
+        el: '#editor',
+        data: {
+          input: '<%= j @article.text %>'
+        },
+        filters: {
+        marked: marked,
+        },
+        });
+      };
+    </script> 
+    
   </div>
 </div>
+
