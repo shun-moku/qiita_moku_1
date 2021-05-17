@@ -3,7 +3,7 @@
         <%# <span><%= image_tag 'arrow_top.png' %>
         
       </div>
-      <div class = "kiji">
+      <div>
       <%= link_to "#{article.user.nickname}さん" , user_path(article.user.id), method: :get %><%= "が#{article.created_at}に投稿しました。"%>
       <p class = title_1><%= link_to article.title, article_path(article.id), method: :get %></p>
       <%# <p><%= article.text %>
