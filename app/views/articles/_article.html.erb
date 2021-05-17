@@ -1,6 +1,6 @@
 <div class="content_post" >
     <div class="more">
-        <span><%= image_tag 'arrow_top.png' %></span>
+        <%# <span><%= image_tag 'arrow_top.png' %>
         <ul class="more_list">
           <li>
             <%= link_to '詳細', article_path(article.id), method: :get %>
@@ -16,10 +16,10 @@
           <% end %>
         </ul>
       </div>
-      <span class="name_1">
-        <%= link_to "#{article.user.nickname}さんが#{article.created_at}に投稿" , user_path(article.user.id), method: :get %>
-      </span>
+      <div class = "kiji">
+      <%= link_to "#{article.user.nickname}さん" , user_path(article.user.id), method: :get %><%= "が#{article.created_at}に投稿しました。"%>
       <p class = title_1><%= link_to article.title, article_path(article.id), method: :get %></p>
       <%# <p><%= article.text %>
-      <p><%= markdown(article.text) %></p>
+      <p><%= simple_format(markdown(article.text)) %></p>
+      </div>
     </div>
