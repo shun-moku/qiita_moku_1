@@ -9,8 +9,13 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    Article.create(article_params)
-    redirect_to "/articles"
+    @article = Article.create(article_params)
+    if @article.save
+    redirect_to root_path
+    else
+      render :new
+    end
+    
   end
 
   def destroy
