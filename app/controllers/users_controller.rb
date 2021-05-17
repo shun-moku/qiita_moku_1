@@ -2,7 +2,7 @@ class UsersController < ApplicationController
 
   def show
     user = User.find(params[:id])
-    @nickname = current_user.nickname
-    @articles = current_user.articles
+    @nickname = user.nickname
+    @articles = user.articles
   end
 end
