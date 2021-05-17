@@ -4,13 +4,16 @@
     <%= form_with(model: @article, local: true) do |form| %>
       <div id = 'editor'>
         <%= form.text_field :title, placeholder: "タイトル" %>
-        <%= form.text_area :text, placeholder: "エンジニアに関わる知識をMarkdown記法で書いて共有しよう", rows: "20", class: 'form-control', id: 'article_text', "v-model" => "input", name: "article[text]" %>
-        <div v-html='input | marked'></div>
+          <div class = 'preview'>
+            <%= form.text_area :text, placeholder: "エンジニアに関わる知識をMarkdown記法で書いて共有しよう", rows: "20", cols: "40", class: 'toukou', id: 'article_text', "v-model" => "input", name: "article[text]" %>
+            <div class = 'preview-1' v-html='input | marked'></div>
+          </div>
       </div>
       <%= form.submit "Qiitaに投稿" %>
     <% end %>
 <!-- リアルタイムプレビュー -->
     <script>
+    marked.setOptions({breaks : true});
       window.onload = function() {
         new Vue({
         el: '#editor',
