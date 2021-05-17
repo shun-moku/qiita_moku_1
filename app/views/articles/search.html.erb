@@ -2,6 +2,7 @@
   <%= form.text_field :keyword, placeholder: "キーワードを入力", class: "search-input" %>
   <%= form.submit "検索", class: "search-btn" %>
 <% end %>
+
 <%= "検索結果" %>
 <div class="contents row">
   <% @articles.each do |article| %>
