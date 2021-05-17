@@ -13,7 +13,7 @@
         </ul>
       </div>
     <% end %>
-    <p><%= @article.text %></p>
+    <p><%= simple_format(markdown(@article.text)) %></p>
     <span class="name">
       <a href="/users/<%= @article.user.id %>">
         <span>投稿者</span><%= @article.user.nickname %>
