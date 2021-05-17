@@ -4,7 +4,6 @@ audio:not([controls]) {
   display: none;
   height: 0;
 }
-
 /*
  * 1. Correct font family not being inherited in all browsers.
  * 2. Correct font size not being inherited in all browsers.
@@ -13,6 +12,7 @@ button,
 input,
 select,
 textarea {
+  resize: none;
   font-family: inherit;
   /* 1 */
   font-size: 100%;
@@ -208,6 +208,7 @@ body,
 html {
   height: 100%;
   background-color: #f5f5f3;
+  width: 100vw;
 }
 
 body {
@@ -226,7 +227,8 @@ body {
   font-size: 16px;
   color: #666;
   font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
-  margin: 19px;
+  margin-top: 19px;
+  width: 90%;
 }
 
 a {
@@ -437,7 +439,7 @@ div.contents.row .new_user {
 
 form input,
 form textarea {
-  width: 100%;
+  width: 95%;
   margin: 15px;
   padding: 10px;
   border: 1px solid #D8D8D8;
@@ -513,4 +515,23 @@ footer p {
 
 .title_1 {
   font-size: 30px;
+}
+
+.preview {
+  display: flex;
+  width: 100%;
+  background-color: skyblue;
+}
+
+.preview-1 {
+  width: 45vw;
+}
+
+
+.toukou {
+  width: 40vw;
+}
+
+.container_new {
+  width: 100%;
 }
