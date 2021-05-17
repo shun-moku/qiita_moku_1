@@ -267,7 +267,7 @@ header.header div.header__bar.row div.grid-6 a.post {
   color: white;
   font-weight: bold;
   text-align: center;
-  border-radius: 3px;
+  border-radius: 20px;
   display: inline-block;
 }
 /* 投稿ボタンの上にマウスを乗せた時に適応 */
@@ -305,11 +305,8 @@ header.header {
 }
 
 header.header div.header__bar.row {
-
   height: 90%;
   width: 90%;
-  background-color: skyblue;
-
 }
 
  /* qiitaの部分の親要素 */
@@ -317,6 +314,9 @@ header.header div.header__bar.row h1.grid-6 {
   font-size: 20px;
   line-height: 41px;
   float: left;
+  width: 20%;
+  position: relative;
+    top: -15px;
 }
 /* qiitaの部分 */
 header.header div.header__bar.row h1.grid-6 a {
@@ -347,7 +347,7 @@ header.header .user_nav span {
   top: 1px;
   display: block;
   float: left;
-  margin-left: 30px;
+  /* margin-left: 30px; */
   width: 150px;
   height: 50px;
   font-size: 14px;
@@ -432,7 +432,7 @@ div.contents.row .new_user {
 }
 .onamae {
   margin: 50px;
-  background-color: #4ea30a;
+  /* background-color: #4ea30a; */
   position: relative;
   left: -47px;
 }
@@ -521,7 +521,7 @@ footer p {
 .preview {
   display: flex;
   width: 100%;
-  background-color: skyblue;
+  border: slategrey;
 }
 
 .preview-1 {
